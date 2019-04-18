@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_omxplayer</name>
+  <version>0.1.0</version>
+  <description>
+    This package is a node that can playing mp3 file.
+  </description>
+  <license>Apache 2.0</license>
+  <author email="travisleetalk@gmail.com">Changju</author>
+  <maintainer email="travisleetalk@gmail.com">Changju</maintainer>
+  <url type="website">http://wiki.ros.org/ros_omxplayer</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+</package>
