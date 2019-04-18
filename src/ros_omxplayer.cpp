@@ -47,7 +47,7 @@ void play_sound_callback(const std_msgs::String::ConstPtr& msg)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "/ros_omxplayer");
+  ros::init(argc, argv, "ros_omxplayer");
   ros::NodeHandle nh;
 
   g_sound_file_path = nh.param<std::string>("sound_file_path", "");
@@ -55,7 +55,7 @@ int main(int argc, char** argv)
     g_sound_file_path += "/";
 
   ros::Subscriber play_mp3_sub = nh.subscribe("/play_sound_file", 10, &play_sound_callback);
-  g_done_msg_pub = nh.advertise<std_msgs::String>("/robotis/movement_done", 5);
+  g_done_msg_pub = nh.advertise<std_msgs::String>("/ros_omxplayer/play_done", 5);
 
   ros::spin();
   return 0;
