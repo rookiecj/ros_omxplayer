@@ -15,7 +15,7 @@ $ sudo apt-get install omxplayer
 $ cd catkin_ws
 $ mkdir -p src
 $ git clone https://github.com/rookiecj/ros_omxplayer.git src/ros_omxplayer
-$ catkin_make
+$ catkin_make && catkin_make install
 ```
 
 ## run
