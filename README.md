@@ -1,3 +1,5 @@
+This `ors_omxplayer` now merged into oroca/iTurtle.
+
 # ros_omxplayer 
 This is a package for playing an mp3 via omxplayer
 
@@ -19,7 +21,7 @@ $ catkin_make
 ## run
 
 ```
-$ source devel/setup.bash
+$ source install/setup.bash
 $ roscore
 $ rosrun ros_omxplayer ros_omxplayer
 ```
@@ -27,6 +29,7 @@ $ rosrun ros_omxplayer ros_omxplayer
 ## test
 
 ```
-$ rostopic pub -1 /play_sound_file std_msgs/String '/home/travis/hello.m4a'
+copy hello.m4a $HOME/
+$ rostopic pub -1 /play_sound_file std_msgs/String '$HOME/hello.m4a'
 ```
 
